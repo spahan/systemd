@@ -1,0 +1,10 @@
+[Unit]
+Description=Update DNS Record for this host
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/set-ddns.pl hanfi.xn--hm-via.ch

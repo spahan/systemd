@@ -1,0 +1,10 @@
+[Unit]
+Description=Run nsupdate every 10 Minutes
+
+[Install]
+WantedBy=timers.target
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=10min
+Persistent=true
