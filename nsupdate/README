@@ -1,0 +1,5 @@
+The script requires 2 files nsupdate.key and nsupdate.private.
+To generate those use dnssec-keygen
+# dnssec-keygen -a HMAC-SHA512 -b 512 -n USER nsupdate
+The nsuodate.key file needs be sent to me admin@spahan.ch and added to the bind configuration
+The nsupdate.private file should be set root-read-only (eg, chmod 0400)
